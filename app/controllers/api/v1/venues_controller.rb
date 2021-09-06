@@ -1,6 +1,8 @@
 module API 
     module V1
         class VenuesController < ApplicationController
+            protect_from_forgery with: :null_session
+
             def index
                 venues = Venues.all
                 render :json VenueSerializer.new(venues, options).serialized_json

@@ -17,7 +17,7 @@ module API
                 if venue.save
                     render :json VenueSerializer.new(venue).serialized_json
                 else 
-                    render :json {error: venue.error.message}, status: 422
+                    render :json { error: venue.error.message }, status: 422
                 end
             end
 

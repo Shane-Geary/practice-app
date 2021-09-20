@@ -1,24 +1,22 @@
-# README
+A Web based application with React.js for the frontend functionality as well as Redux.js handling state with a Rails API for the backend.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Users will be able to leave reviews on venues the have visited. 
 
-Things you may want to cover:
+Walkthrough of the Rails API setup: https://medium.com/@shanegeary1994/setting-up-rails-as-an-api-for-a-react-frontend-c45774bd5d0d
 
-* Ruby version
+Tech Stack
 
-* System dependencies
+This Web App was built with the following:
 
-* Configuration
+- Ruby [2.6.1]
+- Rails [~> 6.0.3] - Custom API
+- React components 
 
-* Database creation
+Installation:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Clone this repo to your local machine git clone
+- run bundle install to install required dependencies
+- run rails db:create to create a database locally.
+- run rails db:migrate to create tables into the database.
+- run rails db:seed to create seed data.
+- run rails s to run the server.
